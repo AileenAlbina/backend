@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Precio } from './model/precio';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'query2';
+
+  public priceDate!:Precio;
+
+  public cargarPrecios(select:Precio){
+
+    this.priceDate=select;
+
+  }
+
 }
